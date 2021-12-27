@@ -8,7 +8,18 @@
     <language>en</language>
     <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.gimenezocano.com/&#34;&gt;Santiago Gimenez Ocano&lt;/a&gt;
 </copyright>
-    <lastBuildDate>Sat, 11 Dec 2021 14:53:55 -0700</lastBuildDate><atom:link href="https://www.gimenezocano.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Dec 2021 17:52:53 -0700</lastBuildDate><atom:link href="https://www.gimenezocano.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Setup This Site</title>
+      <link>https://www.gimenezocano.com/blog/thissite/</link>
+      <pubDate>Sun, 26 Dec 2021 17:52:53 -0700</pubDate>
+      
+      <guid>https://www.gimenezocano.com/blog/thissite/</guid>
+      <description>Introduction This how-to shows the steps and tools that I used to setup this website. To do that I used Hugo to generate static content that is hosted in GitHub Pages. The template I used is called Eureka and I used Namecheap as the DNS Registrar.
+I relied in a group of tutorials that can be found online. You will find a list of them at the bottom of this page.
+Installing Hugo Depending on the package manager that you use, these are the commands you need:</description>
+    </item>
+    
     <item>
       <title>Hello World</title>
       <link>https://www.gimenezocano.com/blog/helloworld/</link>
