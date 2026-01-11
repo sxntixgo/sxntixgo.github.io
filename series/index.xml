@@ -4,9 +4,8 @@
     <title>Series on Santiago&#39;s Desk</title>
     <link>https://www.gimenezocano.com/series/</link>
     <description>Recent content in Series on Santiago&#39;s Desk</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.gimenezocano.com/&#34;&gt;Santiago Gimenez Ocano&lt;/a&gt;
-</copyright><atom:link href="https://www.gimenezocano.com/series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="https://www.gimenezocano.com/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

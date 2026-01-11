@@ -1,1 +1,0 @@
-# sxntixgo.github.io
