@@ -3014,9 +3014,9 @@
     --color-popover: oklch(1.0000 0 0);
     --color-popover-foreground: oklch(0.20 0 0);
     --color-note: oklch(0.70 0.15 238);
-    --color-tip: oklch(0.96 0.06 85);
-    --color-important: oklch(0.96 0.06 85);
-    --color-warning: oklch(0.96 0.06 85);
+    --color-tip: oklch(0.65 0.18 145);
+    --color-important: oklch(0.70 0.15 290);
+    --color-warning: oklch(0.70 0.15 85);
     --color-caution: oklch(0.70 0.16 25);
   }
   [data-theme="argentina"].dark {
@@ -3035,12 +3035,29 @@
     --color-card-foreground: oklch(0.985 0 0);
     --color-popover: oklch(0.269 0 0);
     --color-popover-foreground: oklch(0.985 0 0);
-    --color-note: oklch(0.75 0.16 238);
-    --color-tip: oklch(0.28 0.06 85);
-    --color-important: oklch(0.28 0.06 85);
-    --color-warning: oklch(0.28 0.06 85);
-    --color-caution: oklch(0.75 0.18 25);
+    --color-note: oklch(0.55 0.15 238);
+    --color-tip: oklch(0.50 0.15 145);
+    --color-important: oklch(0.50 0.15 290);
+    --color-warning: oklch(0.55 0.15 85);
+    --color-caution: oklch(0.50 0.18 25);
   }
+}
+
+/* Argentina dark mode - Override admonition backgrounds to be more visible */
+[data-theme="argentina"].dark .alert-note {
+  background-color: color-mix(in srgb, var(--color-note) 30%, transparent) !important;
+}
+[data-theme="argentina"].dark .alert-tip {
+  background-color: color-mix(in srgb, var(--color-tip) 30%, transparent) !important;
+}
+[data-theme="argentina"].dark .alert-important {
+  background-color: color-mix(in srgb, var(--color-important) 30%, transparent) !important;
+}
+[data-theme="argentina"].dark .alert-warning {
+  background-color: color-mix(in srgb, var(--color-warning) 30%, transparent) !important;
+}
+[data-theme="argentina"].dark .alert-caution {
+  background-color: color-mix(in srgb, var(--color-caution) 30%, transparent) !important;
 }
 
 /* Argentina theme - Social media button hover states */
@@ -3068,10 +3085,52 @@
   border-color: oklch(0.96 0.08 85) !important;
 }
 
+/* Argentina dark mode - Muted amber "About This Site" box */
+[data-theme="argentina"].dark .bg-primary\/10 {
+  background-color: oklch(0.35 0.06 85) !important;
+}
+
+[data-theme="argentina"].dark .bg-primary\/10 .text-foreground\/80 {
+  color: oklch(0.85 0 0) !important;
+}
+
+[data-theme="argentina"].dark .border-primary\/30 {
+  border-color: oklch(0.40 0.08 85) !important;
+}
+
+/* Argentina dark mode - Improve nav button visibility */
+[data-theme="argentina"].dark .nav-link:not(.nav-active-indicator) {
+  color: oklch(0.75 0 0);
+}
+
+[data-theme="argentina"].dark .nav-link:hover:not(.nav-active-indicator) {
+  background-color: oklch(0.35 0.12 238) !important;
+  color: oklch(0.90 0 0) !important;
+}
+
+/* Argentina dark mode - Improve icon background visibility */
+[data-theme="argentina"].dark .bg-muted\/50 {
+  background-color: oklch(0.35 0.08 238) !important;
+}
+
+/* Argentina theme - Improve code block button visibility in light mode */
+[data-theme="argentina"]:not(.dark) .code-block-header .text-muted-foreground {
+  color: oklch(0.25 0 0) !important;
+}
+
+[data-theme="argentina"]:not(.dark) .code-block-header .text-muted-foreground:hover {
+  color: oklch(0.70 0.15 238) !important;
+}
+
 /* Argentina theme - Serif font */
 [data-theme="argentina"] {
   --font-sans: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --default-font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Argentina theme - Square corners for serif aesthetic */
+[data-theme="argentina"] *:not(svg):not(svg *) {
+  border-radius: 0 !important;
 }
 
 @layer base {
@@ -3252,13 +3311,13 @@
   }
   .prose blockquote::before {
     content: '"';
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: var(--color-primary);
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in srgb, var(--color-primary) 20%, transparent);
     }
     position: absolute;
-    top: -0.5rem;
+    top: 0.25rem;
     left: 1rem;
     font-family: serif;
     line-height: 1;
@@ -3426,7 +3485,7 @@
     content: counter(item);
     position: absolute;
     left: 0;
-    top: 0.35em;
+    top: 0.1em;
     background: var(--color-primary);
     color: white;
     width: 1.25rem;
