@@ -4,19 +4,8 @@
     <title>Tags on Santiago&#39;s Desk</title>
     <link>https://www.gimenezocano.com/tags/</link>
     <description>Recent content in Tags on Santiago&#39;s Desk</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.gimenezocano.com/&#34;&gt;Santiago Gimenez Ocano&lt;/a&gt;
-</copyright>
-    <lastBuildDate>Sun, 26 Dec 2021 17:52:53 -0700</lastBuildDate><atom:link href="https://www.gimenezocano.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>how-to</title>
-      <link>https://www.gimenezocano.com/tags/how-to/</link>
-      <pubDate>Sun, 26 Dec 2021 17:52:53 -0700</pubDate>
-      
-      <guid>https://www.gimenezocano.com/tags/how-to/</guid>
-      <description></description>
-    </item>
-    
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <atom:link href="https://www.gimenezocano.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
